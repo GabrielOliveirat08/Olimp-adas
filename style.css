@@ -1,0 +1,173 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B7D9EC;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2,5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.sublinha {
+    text-align: center;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+.medal-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.card-pais{
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card-pais:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+.position{
+    position: absolute;
+        top: 15px;
+        right: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.pais-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+.bandeira{
+    font-size: 3.5em;
+    margin-right: 15px;
+}
+.nome-pais{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+.medal-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.gold-box{
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+}
+.prata-box{
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+}
+.bronze-box{
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    background: linear-gradient(135deg, #cd7f32 0%, #e8a87c 100%);
+}
+.medal-nome{
+    font-size: 0.85em;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.medal-conta{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #222;
+}
+.total-medal{
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.card-pais:nth-child(1) .total-medal {
+    background: #B22234; /* EUA - Vermelho */
+}
+
+.card-pais:nth-child(2) .total-medal {
+    background: #DA291C; /* URSS - Vermelho */
+}
+
+.card-pais:nth-child(3) .total-medal {
+    background: #000000; /* Alemanha - Preto */
+}
+
+.card-pais:nth-child(4) .total-medal {
+    background: #012169; /* Grã-Bretanha - Azul */
+}
+
+.card-pais:nth-child(5) .total-medal {
+    background: #002395; /* França - Azul */
+}
+
+.card-pais:nth-child(6) .total-medal {
+    background: #009246; /* Itália - Verde */
+}
+
+.card-pais:nth-child(7) .total-medal {
+    background: #DE2910; /* China - Vermelho */
+}
+
+.card-pais:nth-child(8) .total-medal {
+    background: #00008B; /* Austrália - Azul */
+}
+
+.card-pais:nth-child(9) .total-medal {
+    background: #006AA7; /* Suécia - Azul */
+}
+
+.card-pais:nth-child(10) .total-medal {
+    background: #BC002D; /* Japão - Vermelho */
+}
+
+.total-label{
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.total-count{
+    font-size: 0.9em;
+    margin-bottom: bold;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 2em;
+    }
+    .medal-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Olimpíadas</title>
 </head>
 <body>
     <div class="container">
-        <h1>Explorador Histórico dos Jogos Olímpicos</h1>
-        <p class="sublinha">
-            Uma viagem interativa por todas as edições dos Jogos Olímpicos modernos (1896 - 2024).
-        </p>
+        <header>
+            <img src="img/logo_olipiadas-removebg-preview.png" alt="Anéis Olímpicos" class="logo-olimpica">
+            <h1>Top 10 Melhores dos Jogos Olímpicos</h1>
+            <p class="sublinha">
+                Contagem de medalhas de ouro, prata e bronze em todas as edições dos Jogos Olímpicos, atualizada até a última edição concluída
+            </p>
+            <nav>
+                <a href="https://www.olympics.com/pt/noticias">noticias</a>
+                <a href="https://www.olympics.com/pt/atletas/">Atletas</a>
+            </nav>
+        </header>
 
         <div class="medal-grid">
             <div class="card-pais">
@@ -19,7 +30,7 @@
                 <div class="position">1°</div>
 
                 <div class="pais-header">
-                    <div class="bandeira">US</div>
+                    <div class="bandeira"> <img src="img/bandeira EUA.png" alt="EUA-flag" class="bandeira-img"></div>
                     <div class="nome-pais">Estados Unidos</div>
                 </div>
 
@@ -48,7 +59,7 @@
             <div class="card-pais">
                 <div class="position">2°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> URSS </div>
+                    <div class="bandeira"> <img src="img/bandeira URSS.png" alt="URSS-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> União Sovietica </div>
                 </div>
                 <div class="medal-info">
@@ -74,7 +85,7 @@
             <div class="card-pais">
                 <div class="position">3°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> DE </div>
+                    <div class="bandeira"> <img src="img/bandeira alemanha.png" alt="ALE-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> Alemanha </div>
                 </div>
                 <div class="medal-info">
@@ -100,7 +111,7 @@
             <div class="card-pais">
                 <div class="position">4°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> GB </div>
+                    <div class="bandeira"> <img src="img/bandeira GB.png" alt="GB-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> Grã-Bretanha </div>
                 </div>
                 <div class="medal-info">
@@ -126,7 +137,7 @@
             <div class="card-pais">
                 <div class="position">5°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> FRA </div>
+                    <div class="bandeira"> <img src="img/bandeira frança.png" alt="FRA-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> França </div>
                 </div>
                 <div class="medal-info">
@@ -152,7 +163,7 @@
             <div class="card-pais">
                 <div class="position">6°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> ITA </div>
+                    <div class="bandeira"> <img src="img/bandeira italia.png" alt="ITA-flag" class="bandeira-img"> </div>
                     <div class="nome-pais"> Italia </div>
                 </div>
                 <div class="medal-info">
@@ -178,7 +189,7 @@
             <div class="card-pais">
                 <div class="position">7°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> CN </div>
+                    <div class="bandeira"> <img src="img/bandeira china.png" alt="CN-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> China </div>
                 </div>
                 <div class="medal-info">
@@ -204,7 +215,7 @@
             <div class="card-pais">
                 <div class="position">8°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> AU </div>
+                    <div class="bandeira"> <img src="img/bandeira australia.png" alt="AUS-flag" class="bandeira-img"> </div>
                     <div class="nome-pais"> Austrália </div>
                 </div>
                 <div class="medal-info">
@@ -230,7 +241,7 @@
             <div class="card-pais">
                 <div class="position">9°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> SE </div>
+                    <div class="bandeira"> <img src="img/bandeira suecia.png" alt="SUE-flag" class="bandeira-img"> </div>
                     <div class="nome-pais"> Suécia </div>
                 </div>
                 <div class="medal-info">
@@ -256,7 +267,7 @@
             <div class="card-pais">
                 <div class="position">10°</div>
                 <div class="pais-header">
-                    <div class="bandeira"> JP </div>
+                    <div class="bandeira"> <img src="img/bandeira japao.png" alt="jp-flag" class="bandeira-img"></div>
                     <div class="nome-pais"> Japão </div>
                 </div>
                 <div class="medal-info">
@@ -280,5 +291,14 @@
             </div>
         </div> <!-- fim medal-grid -->
     </div> <!-- fim container -->
+    <footer>
+        <div class="rodape-top">
+            <img src="img/logoRodapé.png" alt="preto&branco" class="logo-pretobranco" width="160" height="79">
+            <p class="rodape"> © 2025 Jogos Olímpicos </p>
+        </div>
+        <a href="https://www.instagram.com/jogosolimpicos/"  class="insta" > Instagram </a>
+        <a href=" https://www.cob.org.br/"> Comitê Olímpico Brasileiro </a>
+        <a href="#">Voltar para o inicio</a>
+    </footer>
 </body>
 </html>
